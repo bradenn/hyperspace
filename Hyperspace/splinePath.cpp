@@ -87,12 +87,12 @@ void splinePath::getPoint(int section, float where, float* position){
 	if(section > numPoints - 3)
 		section = numPoints - 3;
 
-	position[0] = interpolate(xyz[section-1][0], xyz[section][0],
-		xyz[section+1][0], xyz[section+2][0], where);
+//	position[0] = interpolate(xyz[section-1][0], xyz[section][0],
+//		xyz[section+1][0], xyz[section+2][0], where);
 	position[1] = interpolate(xyz[section-1][1], xyz[section][1],
 		xyz[section+1][1], xyz[section+2][1], where);
-	position[2] = interpolate(xyz[section-1][2], xyz[section][2],
-		xyz[section+1][2], xyz[section+2][2], where);
+//	position[2] = interpolate(xyz[section-1][2], xyz[section][2],
+//		xyz[section+1][2], xyz[section+2][2], where);
 }
 
 
@@ -100,23 +100,24 @@ void splinePath::getPoint(int section, float where, float* position){
 // "where" indicates where you are between that pair of points (0.0 - 1.0)
 // "direction" receives the information about the direction you want
 void splinePath::getDirection(int section, float where, float* direction){
-	if(section < 1)
-		section = 1;
-	if(section > numPoints - 3)
-		section = numPoints - 3;
-
-	direction[0] = interpolate(dir[section-1][0], dir[section][0],
-		dir[section+1][0], dir[section+2][0], where);
-	direction[1] = interpolate(dir[section-1][1], dir[section][1],
-		dir[section+1][1], dir[section+2][1], where);
-	direction[2] = interpolate(dir[section-1][2], dir[section][2],
-		dir[section+1][2], dir[section+2][2], where);
-
-	const float normalizer(1.0f / sqrtf(direction[0] * direction[0]
-		+ direction[1] * direction[1] + direction[2] * direction[2]));
-	direction[0] *= normalizer;
-	direction[1] *= normalizer;
-	direction[2] *= normalizer;
+//	if(section < 1)
+//		section = 1;
+//	if(section > numPoints - 3)
+//		section = numPoints - 3;
+//
+//	direction[0] = interpolate(dir[section-1][0], dir[section][0],
+//		dir[section+1][0], dir[section+2][0], where);
+//	direction[1] = interpolate(dir[section-1][1], dir[section][1],
+//		dir[section+1][1], dir[section+2][1], where);
+//	direction[2] = interpolate(dir[section-1][2], dir[section][2],
+//		dir[section+1][2], dir[section+2][2], where);
+//
+//	const float normalizer(1.0f / sqrtf(direction[0] * direction[0]
+//		+ direction[1] * direction[1] + direction[2] * direction[2]));
+//	direction[0] *= normalizer;
+//	direction[1] *= normalizer;
+//	direction[2] *= normalizer;
+  
 }
 
 

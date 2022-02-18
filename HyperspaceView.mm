@@ -80,7 +80,7 @@
                     [self readDefaults:defaults];
                 }
                 
-				self.animationTimeInterval = 1.0/60.0;
+				self.animationTimeInterval = 1.0/24.0;
 				lSettings.first = 1;
             }
 		}

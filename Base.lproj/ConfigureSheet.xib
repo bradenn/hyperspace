@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16097" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,7 +34,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="448" y="277" width="480" height="511"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1079"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="6">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="511"/>
@@ -61,7 +61,7 @@
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9">
                         <rect key="frame" x="17" y="407" width="446" height="17"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Copyright © 2005-2010 Terence M. Welsh." id="63">
+                        <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Copyright © 2005-2022 Terence M. Welsh. &amp; Braden Nicholson" id="63">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -181,7 +181,7 @@ DQ
                         <rect key="frame" x="189" y="260" width="221" height="25"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <sliderCell key="cell" alignment="left" tag="3" minValue="1" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="11" sliderType="linear" id="75">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="setValueForSender:" target="-2" id="53"/>
@@ -200,7 +200,7 @@ DQ
                         <rect key="frame" x="189" y="297" width="221" height="25"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <sliderCell key="cell" alignment="left" tag="2" maxValue="10000" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="21" sliderType="linear" id="77">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="setValueForSender:" target="-2" id="52"/>
@@ -210,7 +210,7 @@ DQ
                         <rect key="frame" x="189" y="334" width="221" height="25"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <sliderCell key="cell" alignment="left" tag="1" minValue="4" maxValue="20" doubleValue="20" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="78">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="setValueForSender:" target="-2" id="51"/>
@@ -265,7 +265,7 @@ DQ
                         <rect key="frame" x="189" y="223" width="221" height="25"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <sliderCell key="cell" alignment="left" tag="4" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="11" sliderType="linear" id="84">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="setValueForSender:" target="-2" id="59"/>
@@ -275,7 +275,7 @@ DQ
                         <rect key="frame" x="189" y="186" width="221" height="25"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <sliderCell key="cell" alignment="left" tag="5" minValue="1" maxValue="10" doubleValue="10" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="85">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="setValueForSender:" target="-2" id="54"/>
@@ -285,7 +285,7 @@ DQ
                         <rect key="frame" x="189" y="149" width="221" height="25"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <sliderCell key="cell" alignment="left" tag="6" minValue="10" maxValue="150" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="21" sliderType="linear" id="86">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="setValueForSender:" target="-2" id="55"/>

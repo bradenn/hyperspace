@@ -57,7 +57,7 @@ void stretchedParticle::draw(float* eyepoint, float unroll, double *modelMat, do
 		screenPos[0] = winx;
 		screenPos[1] = winy;
 	}
-
+    
 	drawPos[0] = (pos[0] + lastPos[0]) * 0.5f;
 	drawPos[1] = (pos[1] + lastPos[1]) * 0.5f;
 	drawPos[2] = (pos[2] + lastPos[2]) * 0.5f;
@@ -87,7 +87,7 @@ void stretchedParticle::draw(float* eyepoint, float unroll, double *modelMat, do
 	bbMat[5] = bbMat[10] * bbMat[0] - bbMat[2] * bbMat[8];
 	bbMat[6] = bbMat[8] * bbMat[1] - bbMat[0] * bbMat[9];
 
-	float stretch = 0.0015f * sqrtf(sd[0] * sd[0] + sd[1] * sd[1]) * n / radius;
+	float stretch = 0.0005f * sqrtf(sd[0] * sd[0] + sd[1] * sd[1]) * n / radius;
 	if(stretch < 1.0f)
 		stretch = 1.0f;
 	if(stretch > 0.5f / radius)
